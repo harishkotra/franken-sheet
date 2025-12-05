@@ -15,6 +15,15 @@ A dark, spooky spreadsheet-based music sequencer powered by Tone.js and AI. Crea
 - **Demo Presets**: Load pre-built drum patterns and melodies from the File menu
 - **Glitch Effects**: Visual feedback when the AI responds (screen shake, formula bar updates)
 
+[Pitch Video](https://youtu.be/XqYUuRF4LTw)
+
+#### Screenshots
+
+<img width="1387" height="1016" alt="Screenshot at Dec 06 00-41-14" src="https://github.com/user-attachments/assets/aec70e0e-4f2e-4408-a8c5-9a2d0f32f156" />
+<img width="1390" height="1018" alt="Screenshot at Dec 06 00-41-41" src="https://github.com/user-attachments/assets/c439b620-5813-4f3f-8f13-077b6c884a05" />
+<img width="1390" height="1018" alt="Screenshot at Dec 06 00-41-55" src="https://github.com/user-attachments/assets/a0af1e8c-4d1b-46b7-a5e2-03e514132113" />
+
+
 ## Getting Started
 
 ### Local Development
