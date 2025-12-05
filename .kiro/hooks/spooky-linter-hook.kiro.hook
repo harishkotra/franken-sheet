@@ -1,0 +1,19 @@
+{
+  "enabled": true,
+  "name": "Spooky Linter",
+  "description": "Warns when console.log is detected in saved files and suggests removing them to keep the repo clean",
+  "version": "1",
+  "when": {
+    "type": "fileEdited",
+    "patterns": [
+      "**/*.js",
+      "**/*.jsx",
+      "**/*.ts",
+      "**/*.tsx"
+    ]
+  },
+  "then": {
+    "type": "askAgent",
+    "prompt": "Check if the file content contains \"console.log\". If it does, respond with: \"👻 WARNING: Remove console.log before the spirits get angry (and to keep the repo clean).\" and suggest replacing all console.log statements with \"// Silence...\" comments. If no console.log is found, respond with \"✨ Code is clean, the spirits are pleased.\""
+  }
+}
