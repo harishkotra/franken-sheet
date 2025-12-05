@@ -143,7 +143,3 @@ The app connects to a local OpenAI-compatible API at `http://localhost:8080/v1/c
 - [ ] Recording and playback
 - [ ] More distortion effects
 - [ ] Reverb and delay
-
-## License
-
-MIT
