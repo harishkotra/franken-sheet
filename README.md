@@ -26,18 +26,6 @@ npm run dev
 
 The app runs on `http://localhost:5173`
 
-### Deploy to Vercel
-
-1. Push your code to GitHub
-2. Go to [vercel.com](https://vercel.com) and sign in
-3. Click "Add New..." → "Project"
-4. Import your GitHub repository
-5. Vercel auto-detects Vite configuration
-6. (Optional) Add environment variable `VITE_API_ENDPOINT` if using a remote API
-7. Click "Deploy"
-
-Your app will be live at `https://your-project.vercel.app`
-
 ### Usage
 
 1. **Fill the Grid**:
