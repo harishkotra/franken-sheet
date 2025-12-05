@@ -17,7 +17,7 @@ A dark, spooky spreadsheet-based music sequencer powered by Tone.js and AI. Crea
 
 ## Getting Started
 
-### Installation
+### Local Development
 
 ```bash
 npm install
@@ -25,6 +25,18 @@ npm run dev
 ```
 
 The app runs on `http://localhost:5173`
+
+### Deploy to Vercel
+
+1. Push your code to GitHub
+2. Go to [vercel.com](https://vercel.com) and sign in
+3. Click "Add New..." → "Project"
+4. Import your GitHub repository
+5. Vercel auto-detects Vite configuration
+6. (Optional) Add environment variable `VITE_API_ENDPOINT` if using a remote API
+7. Click "Deploy"
+
+Your app will be live at `https://your-project.vercel.app`
 
 ### Usage
 
@@ -82,7 +94,10 @@ Each row plays a different pitch. Each column is a time step in the sequencer.
 
 ## AI Integration
 
-The app connects to a local OpenAI-compatible API at `http://localhost:8080/v1/chat/completions`.
+The app connects to an OpenAI-compatible API endpoint. By default, it tries `http://localhost:8080/v1/chat/completions` (for local development).
+
+**For Vercel Deployment**:
+Set the `VITE_API_ENDPOINT` environment variable in your Vercel project settings to your API endpoint (e.g., `https://your-api.com/v1`).
 
 **Request Format**:
 ```json
@@ -101,7 +116,7 @@ The app connects to a local OpenAI-compatible API at `http://localhost:8080/v1/c
 }
 ```
 
-**Fallback**: If the API is unavailable, the app uses a mock ghost that returns `{ bpm: 140, scale: "C Phrygian", mood: "Demonic" }` after 2 seconds.
+**Fallback**: If the API is unavailable, the app uses a mock ghost that returns `{ bpm: 140, scale: "C Phrygian", mood: "Demonic" }` after 2 seconds. This ensures the demo always works.
 
 ## Tech Stack
 
